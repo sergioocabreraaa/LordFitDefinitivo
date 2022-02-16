@@ -2,5 +2,11 @@
 /* **************************************************************** */
 
 @font-face {
-    
+    font-family: 'roboto_negrita';
+    src: url(../font/roboto-bold-webfont.woff2);
+}
+
+@font-face {
+    font-family: 'roboto_regular';
+    src: url(../font/roboto-regular-webfont.woff2);
 }
