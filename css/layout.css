@@ -1,4 +1,142 @@
 /* CSS LAYOUT */
 /* **************************************************************** */
 
+html{
+	font-size: 20px;
 
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: #79DDFF;
+    
+}
+
+div{
+  
+	text-align: right;
+	
+	/* Desktop elimar el Label*/
+	@media only screen and (min-width:900px){
+		label{
+			display: none;
+		}
+	}
+	/* --- */
+}
+ul{
+	display: none;
+/* Desktop Flexbox*/
+		@media only screen and (min-width:900px){
+		display: flex;
+			width: 50%;
+			& li{
+				margin:0 1rem;
+				
+				&:before{
+					content:"‣";
+				}
+			}
+	}
+	/* --- */
+}
+.navdesk{
+    background-color: #B798FF;
+}
+
+
+input:checked + ul{
+	display: block;
+
+}
+#click{
+    display: none;
+}
+
+
+
+form{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+
+
+label{
+    
+    margin: .5em 0 0 0;
+    
+}
+/* Quienes Somos */
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.centrado{
+    position: absolute;
+    top: 47%;
+    left: 30%;
+    transform: translate(-52%, -50%);
+	width: 100%;
+}
+.centradoqs{
+    position: absolute;
+    top: 47%;
+    left: 30%;
+    transform: translate(-52%, -50%);
+	width: 100%;
+}
+
+.titulopagina{
+	color: white;
+	font-size: 64px;
+}
+/* Servicios y Contactar */
+.contenedor1{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.centrado1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.titulopagina1{
+	color: white;
+	font-size: 64px;
+}
+
+input[type=text] {
+    border: 2px solid #79DDFF;
+    border-radius: 4px;
+    width: 298px;
+    height: 45px;
+  }
+.button5 {
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 60px;
+    background-color: #8F72DB;
+    border:none;
+    color: white;
+}
+p{
+    font-size: 30px;
+}
+
+.vippag{
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;  
+}

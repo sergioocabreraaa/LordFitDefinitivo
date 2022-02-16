@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+          font-family: 'Roboto', sans-serif;   
+        }
+      </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painga Vip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <header>
+    <nav class="nav">
+        
+      <div>
+          <label for="click"><img class="iconomenu" src="img/icono menu.svg" alt=""></label>
+          
+          <input type="checkbox" id="click">
+              <ul>
+                  
+                  <a href="servicios.html"><li>Servicios</li></a>
+                  <a href="quienessomos.html"><li>Quienes Somos</li></a>
+                  <a href="contacto.html"><li>Contactar</li></a> 
+                  <a href="login.html"><li>Iniciar Sesion</li></a><hr>
+                  <a href="registro.html"> <li>Registrarse</li></a>
+  
+              </ul>
+      </div>
+      <a href="index.html"><img src="img/logo 1.svg" alt=""></a>
+  </nav>
+  
+
+   </header> 
+<div class="vippag">
+
+    <h1><b>¡Has iniciado sesion!</b></h1>
+
+   <picture>
+        <!-- smartphone -->
+        <source
+          srcset="
+          ./img/iphone/vipimg.jpg,
+          ./img/iphone/vipimg@2x.jpg,
+          ./img/iphone/vipimg@3x.jpg
+
+          ./img/iphone/vipimg.webp,
+          ./img/iphone/vipimg@2x.webp,
+          ./img/iphone/vipimg@3x.webp
+          "
+          media="(min-width:300px) and (max-width:450px) and (orientation: portrait)"
+        />
+
+        <!-- ipad -->
+        <source
+          srcset="img/ipad/vipipad.jpg 1x, 
+									img/ipad/vipipad@2x.jpg 2x"
+          media="(min-width:768px) and (max-width:1024px) and (orientation: portrait)"
+        />
+
+        <!-- escritorio -->
+        <source
+          srcset="
+            img/mac/vipmac.jpg    1x,
+            img/mac/vipmac@2x.jpg 2x
+          "
+          media="(min-width:1200px)"
+        />
+
+        <!-- Etiqueta img -->
+        <img src="" alt="banner" />
+      </picture>
+
+      <h2>Bienvenido a la zona vip</h2>
+</div>
+       
+        
+
+
+</body>
+</html>

@@ -4,7 +4,9 @@
 /* ****************** */
 /* *** Smartphone *** */
 @media only screen and (min-device-width: 320px) and (orientation: portrait){
-
+    .navdesk{
+        display: none;
+    }
 }
 /* *************** */
 /* *** Tablet *** */
@@ -21,5 +23,51 @@
 /* **************** */
 /* *** Desktop *** */
 @media only screen and (min-width: 1100px){
-    /* cambio de nav */
+    .centradoqs{
+        position: absolute;
+        top: 47%;
+        left: 16%;
+        transform: translate(-52%, -50%);
+        width: 100%;
+    }
+
+
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+         background-color: #B798FF;
+         flex-direction: row-reverse;
+        
+    }
+    
+    div{
+      
+        text-align: right;
+        
+        /* Desktop elimar el Label*/
+        @media only screen and (min-width:900px){
+            label{
+                display: none;
+            }
+        }
+        /* --- */
+    }
+    ul{
+        display: none;
+    /* Desktop Flexbox*/
+            @media only screen and (min-width:900px){
+            display: flex;
+                width: 50%;
+                & li{
+                    margin:0 1rem;
+                    
+                    &:before{
+                        content:"‣";
+                    }
+                }
+        }
+        /* --- */
+    }
 }
