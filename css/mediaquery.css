@@ -7,6 +7,9 @@
     .navdesk{
         display: none;
     }
+    .iniciadosesion{
+        font-size: 40px;
+    }
 }
 /* *************** */
 /* *** Tablet *** */
