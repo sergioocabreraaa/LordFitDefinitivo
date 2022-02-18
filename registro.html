@@ -38,17 +38,59 @@
       
        </header> 
       
-        <form action="login.html">
+        <form action="login.html" id="formulario">
+
             <H1>Registrarse</H1>
-            <label class="label" for="Nombre">Nombre</label><input type="text" name="nombre" value="" required>
-            <label class="label" for="Apellidos">Apellidos</label><input type="text" name="apellidos"value="" required>
-            <label class="label" for="Email">Email</label><input type="email" name="email" value="" required>
-            <label class="label" for="Contraseña">Contraseña</label><input type="password" name="contraseña" value="" required> 
-            <label class="label" for="ContraseñaRepetida"> Repetir Contraseña</label><input type="password" name="contraseña" value=""required >
-      
-               <button class="button5" type="submit" value="">Registrarse</button>
-         
+
+            <div class="formulario__grupo" id="grupo__nombre">
+            <label class="label" for="nombre">Nombre</label>
+            <input class="formulario__input" id="nombre" type="text" name="nombre" required>
+            <p class="formulario__input-error">El nombre no puede contener ni numeros ni simbolos.</p>
+</div>
+
+            <div class="formulario__grupo" id="grupo__apellidos">
+            <label class="label" for="apellidos">Apellidos</label>
+            <input class="formulario__input" id="apellidos" type="text" name="apellidos" required>
+            <p class="formulario__input-error">El apellido no puede contener ni numeros ni simbolos.</p>
+        </div>           
+           
+
+            
+        <div class="formulario__grupo" id="grupo__correo">
+            <label class="label" for="correo">Email</label>
+            <input class="formulario__input" id="correo" type="email" name="correo" required>
+            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+        </div>
+           
+
+          
+
+            <div class="formulario__grupo" id="grupo__password">
+            <label class="label" for="Contraseña">Contraseña</label>
+            <input class="formulario__input" id="password" type="password" name="password" required> 
+            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+        </div>
+           
+
+
+            <div class="formulario__grupo" id="grupo__password2">
+            <label class="label" for="ContraseñaRepetida"> Repetir Contraseña</label>
+            <input class="formulario__input" id="password2" type="password" name="password2"required >
+            <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+        </div>
+           
+                 
+            
+            <button class="button5" type="submit">Registrarse</button>
+
+            
+            <script src="app.js"></script>
         
+
+
+
+
+
         </form>
         
          

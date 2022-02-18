@@ -39,14 +39,27 @@
     
        </header> 
       
-        <form action="vip.html">
+        <form action="vip.html" id="formulario">
             <H1>Iniciar Sesion</H1>
-            <label class="label" for="Email">Email</label><input type="email" value="" required>
-            <label class="label" for="Contraseña">Contraseña</label><input type="password" value="" required>
+
+            <div class="formulario__grupo" id="grupo__correo">
+                <label class="label" for="correo">Email</label>
+                <input class="formulario__input" id="correo" type="email" name="correo" required>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones, guion bajo.</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__password">
+                <label class="label" for="Contraseña">Contraseña</label>
+                <input class="formulario__input" id="password" type="password" name="password" required> 
+                <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+            </div>
             
               <button class="button5" type="submit" value="Entrar">Entrar</button>
            
+
+              <script src="app.js"></script>
         </form>
+
         
      
 </body>

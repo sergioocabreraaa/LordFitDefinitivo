@@ -124,4 +124,34 @@ p{
     align-items: center;
     padding-top: 20px;  
 }
+.formulario__grupo{
 
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+.formulario__input-error-activo {
+	display: block;
+}
+
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
