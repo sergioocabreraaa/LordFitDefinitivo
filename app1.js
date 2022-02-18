@@ -1,10 +1,11 @@
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
+
 const expresiones = {
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
     apellidos: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
-	password: /^.{4,12}$/, // 4 a 12 digitos.
+	password: /^(?=(?:.*\d){1})(?=(?:.*[A-Z]){1})(?=(?:.*[a-z]){1})(?=(?:.*[@$?¡\-_]){1})\S{8,16}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 
 }
