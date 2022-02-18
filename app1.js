@@ -2,7 +2,7 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
+	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
     apellidos: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
 	password: /^.{4,12}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -14,7 +14,6 @@ const campos = {
 	apellidos: false,
 	correo: false,
 	password: false
-
 }
 
 const validarFormulario = (e) =>{
@@ -81,7 +80,7 @@ inputs.forEach((input) => {
 
 formulario.addEventListener('submit', (e) => {
 e.preventDefault();
-if(campos.nombre && campos.apellidos && campos.correo && campos.password ){
+if(campos.correo && campos.password ){
 formulario.reset();
 
 }
