@@ -3,11 +3,10 @@ const inputs = document.querySelectorAll('#formulario input');
 
 
 const expresiones = {
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
-    apellidos: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
-	password: /^(?=(?:.*\d){1})(?=(?:.*[A-Z]){1})(?=(?:.*[a-z]){1})(?=(?:.*[@$?¡\-_]){1})\S{8,16}$/, 
-	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-
+	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, //Solo permite letras para el nombre
+    apellidos: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, //Solo permite letras para el apellido
+	password: /^(?=(?:.*\d){1})(?=(?:.*[A-Z]){1})(?=(?:.*[a-z]){1})(?=(?:.*[@$?¡\-_]){1})\S{8,16}$/, //Obliga a tener alemnos una mayuscula, un numero, y un caracter especial.
+	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,	//Obliga a poner el "@" y .algo"								  
 }
 
 const campos = {
